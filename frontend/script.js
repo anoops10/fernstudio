@@ -54,11 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
             title.className = 'portfolio-title';
             title.textContent = item.title || 'Untitled item';
 
+            const titleBlock = document.createElement('div');
+            const tag = document.createElement('span');
+            tag.className = 'portfolio-tag';
+            tag.textContent = item.category || 'Seasonal selection';
+            titleBlock.append(tag, title);
+
             const price = document.createElement('span');
             price.className = 'portfolio-price';
             price.textContent = `₹${item.price ?? 0}`;
 
-            header.append(title, price);
+            header.append(titleBlock, price);
 
             const description = document.createElement('p');
             description.className = 'portfolio-description';

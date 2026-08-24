@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FernStudio</title>
+    <meta name="theme-color" content="#f7f1e8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>FernStudio | Flowers for meaningful moments</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>My Work</h1>
-        
-        <!-- The JS will inject the portfolio cards inside this div -->
-        <div id="portfolio-container" class="portfolio-grid">
-            <p id="status-message">Loading portfolio...</p>
-        </div>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="./" aria-label="FernStudio home"><span class="brand-mark" aria-hidden="true">✽</span><span>Fern<span>Studio</span></span></a>
+        <a class="header-link" href="#collection">Browse blooms <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Flowers, thoughtfully gathered</p>
+                <h1 id="hero-title">A little beauty<br><em>for every day.</em></h1>
+                <p class="hero-intro">Seasonal stems and hand-tied bouquets, made to bring a softer feeling home.</p>
+                <a class="primary-button" href="#collection">Explore the collection <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-image-wrap">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Pink and white flowers in a garden">
+                <p class="hero-note"><span>01</span> Fresh from the season</p>
+            </div>
+        </section>
+
+        <section class="promise" aria-label="FernStudio promise">
+            <p>Small gestures <span>·</span> Big feelings</p>
+            <p>Wrapped by hand <span>·</span> Delivered with care</p>
+        </section>
+
+        <section class="collection" id="collection" aria-labelledby="collection-title">
+            <div class="section-heading"><div><p class="eyebrow">The FernStudio edit</p><h2 id="collection-title">Made for<br><em>the moment.</em></h2></div><p class="section-description">A considered collection of blooms for birthdays, thank-yous, and the wonderfully ordinary days.</p></div>
+            <div id="portfolio-container" class="portfolio-grid" aria-live="polite"><p id="status-message">Gathering today’s blooms...</p></div>
+        </section>
+
+        <section class="closing-banner" aria-label="Custom bouquets"><div><p class="eyebrow">Have something in mind?</p><h2>Tell us your<br><em>flower story.</em></h2></div><a class="circle-button" href="mailto:hello@fernstudio.com" aria-label="Email FernStudio">↗</a></section>
+    </main>
+
+    <footer class="site-footer"><span>FernStudio</span><span>Made with flowers &amp; feeling</span></footer>
 
     <script src="script.js"></script>
 </body>
