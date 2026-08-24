@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-github-username/your-repo-name # Change this!
+  repo: anoops10/fernstudio # Change this!
   branch: main
 
 # Where images will be saved in your repo
