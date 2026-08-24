@@ -5,6 +5,12 @@
       "price": 200,
       "description": "made with love",
       "image": "/images/gfc.png"
+    },
+    {
+      "title": "test item",
+      "price": 200,
+      "description": "made with love",
+      "image": "/images/gfc.png"
     }
   ]
 }
