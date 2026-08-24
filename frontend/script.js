@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (item.image) {
                 const image = document.createElement('img');
-                image.src = `./${item.image}`;
+                const imagePath = item.image.replace(/^\/?images\//, 'images/');
+                image.src = `./${imagePath}`;
                 image.alt = item.title || 'Portfolio item';
                 image.className = 'portfolio-image';
                 card.appendChild(image);
