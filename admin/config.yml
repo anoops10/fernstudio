@@ -4,7 +4,7 @@ backend:
   branch: main
 
 # Where images will be saved in your repo
-media_folder: "images"
+media_folder: "frontend/images"
 public_folder: "images"
 
 collections:
@@ -13,7 +13,7 @@ collections:
     files:
       - label: "Portfolio Items"
         name: "items"
-        file: "portfolio-items.json"
+        file: "frontend/portfolio-items.json"
         fields:
           - label: "Items"
             name: "items"
