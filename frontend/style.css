@@ -40,14 +40,18 @@ h1 em, h2 em { color: var(--coral); font-style: italic; }
 .section-heading h2, .closing-banner h2 { font-size: 52px; }
 .section-description { color: var(--muted); line-height: 1.6; margin: 0; max-width: 300px; }
 .portfolio-grid { display: grid; gap: 26px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.portfolio-card { min-width: 0; }
-.portfolio-image { aspect-ratio: 1 / 1.18; background: var(--sage); display: block; object-fit: cover; width: 100%; }
+.portfolio-card { min-width: 0; position: relative; }
+.portfolio-card::after { color: var(--coral); content: "✳"; font-size: 17px; position: absolute; right: 10px; top: 10px; }
+.portfolio-image { aspect-ratio: 1 / 1.18; background: var(--sage); display: block; object-fit: cover; transition: transform .35s ease; width: 100%; }
+.portfolio-card:hover .portfolio-image { transform: rotate(1deg) scale(1.02); }
 .portfolio-content { padding: 14px 0 0; }
 .portfolio-header { align-items: flex-start; display: flex; gap: 8px; justify-content: space-between; }
 .portfolio-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: 25px; line-height: 1; margin: 3px 0 0; }
 .portfolio-tag { color: var(--coral); display: block; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
 .portfolio-price { font-size: 13px; font-weight: 600; white-space: nowrap; }
 .portfolio-description { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 9px 0 0; }
+.portfolio-card:nth-child(3n + 2) .portfolio-image { border-radius: 50% 50% 0 0; }
+.portfolio-card:nth-child(3n) .portfolio-image { border-radius: 0 0 45% 45%; }
 #status-message { color: var(--muted); grid-column: 1 / -1; margin: 10px 0; }
 .closing-banner { align-items: flex-end; background: var(--sage); display: flex; justify-content: space-between; padding: 42px 20px 45px; }
 .closing-banner .eyebrow { margin-bottom: 15px; }
@@ -60,5 +64,6 @@ h1 em, h2 em { color: var(--coral); font-style: italic; }
     .promise, .collection, .site-footer { padding-left: 40px; padding-right: 40px; }
     .section-heading { align-items: end; grid-template-columns: 1fr 1fr; }
     .portfolio-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; }
+    .portfolio-card:nth-child(3n + 2) { padding-top: 44px; }
     .closing-banner { padding: 65px 40px 70px; }
 }

@@ -1,16 +1,32 @@
 {
   "items": [
     {
-      "title": "test item",
+      "title": "Sunshine stems",
       "price": 200,
-      "description": "made with love",
-      "image": "/images/gfc.png"
+      "description": "A cheerful little bundle of pipe-cleaner blooms for a bright corner.",
+      "image": "images/pipe-cleaner-bouquet.svg",
+      "category": "Pipe-cleaner flowers"
     },
     {
-      "title": "test item",
-      "price": 200,
-      "description": "made with love",
-      "image": "/images/gfc.png"
+      "title": "Pocket posy",
+      "price": 150,
+      "description": "A tiny handmade flower to tuck into a gift, bag, or favourite shelf.",
+      "image": "images/pipe-cleaner-sunflower.svg",
+      "category": "Tiny gifts"
+    },
+    {
+      "title": "Custom colour mix",
+      "price": 350,
+      "description": "A playful made-to-order arrangement in colours chosen just for you.",
+      "image": "images/pipe-cleaner-bouquet.svg",
+      "category": "Made to order"
+    },
+    {
+      "title": "Happy desk friend",
+      "price": 250,
+      "description": "A bright handmade companion for your desk, bedside table, or reading nook.",
+      "image": "images/pipe-cleaner-sunflower.svg",
+      "category": "Craft keepsakes"
     }
   ]
 }
