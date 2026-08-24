@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name # Change this!
+  branch: main
+
+# Where images will be saved in your repo
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Data"
+    files:
+      - label: "Portfolio Items"
+        name: "items"
+        file: "portfolio-items.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
