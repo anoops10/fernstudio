@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const price = document.createElement('span');
             price.className = 'portfolio-price';
-            price.textContent = `$${item.price ?? 0}`;
+            price.textContent = `₹${item.price ?? 0}`;
 
             header.append(title, price);
 
